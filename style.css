@@ -3,9 +3,6 @@ html {
     font-size: 1em; 
 }
 
-body {
-    
-}
 
 
 /* =================================== SOON PAGE =============================== */
@@ -23,6 +20,13 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.logo {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    float: left;
+    margin-left: 2em;
 }
 /* =================================== SOON PAGE =============================== */
 
@@ -109,6 +113,33 @@ input {
     background-image: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 80%, 86%));
   }
 
+ small {
+    color: hsl(0, 100%, 74%);
+    text-align: right;
+    margin-top: .5em;
+    text-align: right;
+    display: block;
+  }
+
+  .form-control.error input {
+    border: 1px solid hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+  }
+
+  small {
+      color: hsl(0, 93%, 68%);
+      display: flex;
+      margin-left: 2.2em;
+  }
+
+.errorimg {
+    position: absolute;
+    margin-left: -11em;
+    margin-top: 1em;
+    display: none;
+
+}
+
 /* =================================== FORM/BUTTON =============================== */
 
 
@@ -123,8 +154,10 @@ input {
     max-height: 800px;
     flex-direction: column;
     margin: 3em auto;
-    padding-bottom: 15em;
+    padding-bottom: 25em;
 }
+
+
 /* =================================== SOON PAGE =============================== */
 
 
@@ -138,7 +171,7 @@ input {
 h1 {
     width: 8em;
     display: inline-block;
-    margin-top: .5em;
+    margin-top: 1.5em;
 }
 
 span {
@@ -175,7 +208,28 @@ input {
     margin-left: 5em;
 }
 
+/* =================================== FORM/BUTTON =============================== */
+input {
+    padding: 1em;
+    border-radius: 2em;
+    padding-left: 2em;
+    padding-right: 8em;
+}
+
+  small {
+justify-content: center;
+  }
+
+
+/* =================================== FORM/BUTTON =============================== */
 
 
   }
 /* ######################################## MOBILE ################################## */
+
+@media only screen and (max-width: 600px) { 
+    .soonpage {
+        padding-bottom: 10em;
+    }
+
+}
